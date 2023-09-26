@@ -30,26 +30,80 @@
                     Console.WriteLine("Qu'elle est la convertission que vous voulez faire ?");
 
                     mètre = Convert.ToDouble(Console.ReadLine());
-                    yards = mètre * 1.0936;
+                    yards = mètre * 1.09361;
                     Console.WriteLine($"La conversion en years est: {yards} yd");
-                    Console.ReadKey();
+                  
                 }
-                else if (line.ToLower() == "yards" || line.ToLower() == "Yards")
+                else if (line == "yards")
                 {
                     Console.WriteLine("Bienvenuau au convertisseur de " +
-                        "Yards en mètre");
+                        "Yards en Mètre");
                     Console.WriteLine("Qu'elle est la convertission que vous voulez faire ?");
 
 
                     yards = Convert.ToDouble(Console.ReadLine());
-                    mètre = yards * 1.09144; 
-                    Console.WriteLine($"La conversion en mètre est: {yards} CAN");
-                    Console.ReadKey();
-
+                    mètre = yards * 0.9144;
+                    Console.WriteLine($"La conversion en mètre est: {mètre} mètre");
+                    
                 }
+                else if (line == "grams")
+                {
+                    Console.WriteLine("Bienvenuau au convertisseur de " +
+                        "Grams en Ounces");
+                    Console.WriteLine("Qu'elle est la convertission que vous voulez faire ?");
+
+
+                    grams = Convert.ToDouble(Console.ReadLine());
+                    ounces = grams * 0.035274;
+                    Console.WriteLine($"La conversion en Grams est: {ounces} Ounces");
+                   
+                }
+                else if (line == "ounces")
+                {
+                    Console.WriteLine("Bienvenuau au convertisseur de " +
+                        "Ounces en Grams");
+                    Console.WriteLine("Qu'elle est la convertission que vous voulez faire ?");
+
+
+                    ounces = Convert.ToDouble(Console.ReadLine());
+                    grams = ounces * 28.3495;
+                    Console.WriteLine($"La conversion en Grams est: {grams} Grams");
+                   
+                }
+
+                else if (line == "litre")
+                {
+                    Console.WriteLine("Bienvenuau au convertisseur de " +
+                        "Litre en Gallons");
+                    Console.WriteLine("Qu'elle est la convertission que vous voulez faire ?");
+
+
+                    litres = Convert.ToDouble(Console.ReadLine());
+                    gallons = litres * 0.2641720524;
+                    Console.WriteLine($"La conversion en Litres est: {gallons} Gallons");
+                   
+                }
+                else if (line == "gallons")
+                {
+                    Console.WriteLine("Bienvenuau au convertisseur de " +
+                        "Litre en Gallons");
+                    Console.WriteLine("Qu'elle est la convertission que vous voulez faire ?");
+
+
+                    gallons = Convert.ToDouble(Console.ReadLine());
+                    litres = gallons * 3.785411785;
+                    Console.WriteLine($"La conversion en Gallons est: {litres} Litres");
+                   
+                }
+               
+                Console.WriteLine("\nMerci d'avoir utilisé l'outil Metric!");
+                
+                
             }
         }
-
-
     }
 }
+
+
+              
+      
