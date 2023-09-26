@@ -25,6 +25,7 @@ namespace ProjetOutils
         public Quiz()
         {
             int n = random.Next(10);
+            Console.WriteLine($"n = {n}");
         }
         
         
