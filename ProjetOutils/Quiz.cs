@@ -22,6 +22,10 @@ namespace ProjetOutils
         int correctAnswers = 0;
         Random random = new Random();
 
+        public Quiz()
+        {
+            int n = random.Next(10);
+        }
         
         
     }
