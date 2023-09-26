@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ProjetOutils
+﻿namespace ProjetOutils
 {
     internal class Metric
     {
@@ -29,9 +22,9 @@ namespace ProjetOutils
 
             while (true)
             {
-                string line = Console.ReadLine();
-                if (line.ToLower() == "metre" || line.ToLower() == "Metre" ||
-                    line.ToLower() == "mètre" || line.ToLower() == "Métre")
+                string? line = Console.ReadLine()?.ToLower();
+
+                if (line == "mètre")
                 {
                     Console.WriteLine("Bienvenuau au convertisseur de mètre en yards.");
                     Console.WriteLine("Qu'elle est la convertission que vous voulez faire ?");
